@@ -5,10 +5,16 @@
     justify-content: center;
     width: 100%;
   }
-  
-  .div-wrapper .group-wrapper {
+  .div-wrapper .group-wrapper-header {
     background-color: #ffffff;
     height: 117px;
+    overflow: hidden;
+    width: 1440px;
+  }
+
+  .div-wrapper .group-wrapper {
+    background-color: #ffffff;
+    height: 1052px;
     overflow: hidden;
     width: 1440px;
   }
@@ -379,7 +385,7 @@
     font-size: 22px;
     font-weight: 400;
     height: 76px;
-    left: 8px;
+    left: 0px;
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
@@ -413,7 +419,7 @@
     font-size: 22px;
     font-weight: 400;
     height: 76px;
-    left: 115px;
+    left: 100px;
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
@@ -430,13 +436,13 @@
     font-size: 22px;
     font-weight: 400;
     height: 76px;
-    left: 222px;
+    left: 200px;
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
     text-align: center;
     top: 11px;
-    width: 100px;
+    width: 120px;
     border: none;
     background-color: transparent;
   }
@@ -447,13 +453,13 @@
     font-size: 22px;
     font-weight: 400;
     height: 76px;
-    left: 330px;
+    left: 320px;
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
     text-align: center;
     top: 11px;
-    width: 135px;
+    width: 140px;
     border: none;
     background-color: transparent;
   }

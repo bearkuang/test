@@ -4,11 +4,10 @@ import "./style.css";
 const Main = () => {
     return (
             <div className="div-wrapper">
-                <div className="group-wrapper">
+                <div className="group-wrapper-header">
                     <div className="group">
                         <div className="text-wrapper">ReCode</div>
                         <div className="overlap">
-                            
                                 <img className="arrow" alt="Arrow" src="https://c.animaapp.com/zD8ocGVr/img/arrow-21.svg" />
                                 <div className="view-5">
                                     <div className="overlap-6">
@@ -27,8 +26,6 @@ const Main = () => {
                                     </div>
                                     <div className="text-wrapper-12">ReCode</div>
                                 </div>
-                            
-                            
                         </div>
                     </div>
                 </div>
