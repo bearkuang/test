@@ -1,4 +1,21 @@
 /* src/FindIdForm.css */
+.header {
+  position: fixed; /* 또는 relative, absolute도 가능 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px; /* 헤더의 높이 */
+  background: #333;
+  z-index: 10; /* 다른 요소들 위에 헤더가 위치하도록 설정 */
+}
+
+.stickyComponent {
+  position: sticky;
+  top: 50px; /* 헤더 높이와 같게 설정 */
+  background: #ccc;
+  z-index: 5;
+}
+
 .find-id-container {
     max-width: 400px;
     margin: 50px auto;

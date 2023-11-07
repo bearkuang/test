@@ -4,7 +4,6 @@ import "./style.css";
 import Layout from './LayoutGrid';
 import Searchbar from './Searchbar';
 import Skilldropdown from './Skilldropdown';
-import Checkbox from "./Checkbox";
 
 const Main = () => {
     var settings = {
@@ -59,11 +58,10 @@ const Main = () => {
                                         <div className="grid grid-rows-1 grid-flow-col">
                                             <Skilldropdown className="inline-block"></Skilldropdown>
                                             <Searchbar className="inline-block"></Searchbar>
-                                            {/* <Checkbox className="inline-block"></Checkbox> */}
                                         </div>
                                     </section>
                                 </Layout>
-                                <div className="view-5">
+                                {/* <div className="view-5">
                                     <div className="overlap-6">
                                         <div className="view-6">
                                             <div className="overlap-group-3">
@@ -79,7 +77,7 @@ const Main = () => {
                                         <button className="text-wrapper-11 hover:bg-blue-600">스터디 목록</button>
                                     </div>
                                     <div className="text-wrapper-12">ReCode</div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
