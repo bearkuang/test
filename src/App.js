@@ -1,11 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import MypageMain from "./components/MypageMain";
-import Mypageprivate from "./components/Mypageprivate";
-import Practice from "./components/practice";
+import MypageMain from "./components/Mypage/MypageMain";
 import Main from "./components/Main";
-import FindIdForm from "./components/FindIdForm";
-import Header from './components/Header';
+import FindIdForm from "./components/Client/FindIdForm";
+import Header from './components/Fix/Header';
+import Mypage_Myprofile from './components/Mypage/Mypage_Myprofile';
 
 function App() {
   return (
@@ -14,8 +13,7 @@ function App() {
       <div className="main-content"> {/* 이 div가 헤더와 나머지 컨텐츠 사이의 간격을 조정합니다 */}
         <Routes>
           <Route path="/mypage" element={<MypageMain />} />
-          <Route path="/private" element={<Mypageprivate />} />
-          <Route path="/practice" element={<Practice />} />
+          <Route path="/mypage/myprofile" element={<Mypage_Myprofile />} />
           <Route path="/findId" element={<FindIdForm />} />
           <Route path="/" element={<Main />} />
         </Routes>
