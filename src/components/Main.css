@@ -26,12 +26,16 @@
     margin: 0 0.5rem;
   }
 
-.grid-cols-3 {
-  grid-template-columns: repeat(3,
-   minmax(0, 1fr));
-}
+  .fixed-container {
+    display: flex;
+    justify-content: center;
+  }
 
-.contents {
-  position: absolute;
-  width: 1453px;
-}
+  .grid {
+    display: grid;
+    grid-template-columns: 120px 120px 140px 140px 150px 300px 400px; /* 1열과 4열을 1fr로 설정 */
+  }
+
+  .custom-button {
+    background-color: transparent;
+  }
