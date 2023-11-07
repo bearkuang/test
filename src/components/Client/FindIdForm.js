@@ -1,3 +1,5 @@
+import './FindIdForm.css';
+
 const FindIdForm = () => {
   return (
     <div className="relative bg-white w-full h-[1052px] overflow-hidden text-center text-29xl text-black font-itim">
@@ -14,9 +16,11 @@ const FindIdForm = () => {
             이메일
           </div>
           <div className="absolute top-[139px] left-[0px] rounded-3xs bg-white box-border w-[698px] h-[50px] border-[1px] border-solid border-black" />
-          <div className="absolute top-[139px] left-[7px] text-black text-left flex items-center w-[683px] h-[49px]">
-            kimanydong1234@gmail.com
-          </div>
+          <input
+          type="email"
+          className="absolute top-[139px] left-[0px] rounded-3xs bg-white box-border w-[698px] h-[50px] border-[1px] border-solid border-black"
+          placeholder="이메일 주소를 입력하세요"
+        />
           <div className="absolute top-[4px] left-[7px] flex items-center justify-center w-[43px] h-[19px]">
             닉네임
           </div>
@@ -37,9 +41,12 @@ const FindIdForm = () => {
           alt=""
           src="/rectangle-52.svg"
         />
-        <div className="absolute top-[307px] left-[580px] text-xl text-black flex items-center justify-center w-[77px] h-7">
-          다음
-        </div>
+        <button
+  type="button" // Change to "submit" if this button is meant to submit a form
+  className="absolute top-[308px] left-[580px] rounded-[30px] w-[77px] h-[27px] bg-cornflowerblue text-xl text-black flex items-center justify-center"
+>
+  다음
+</button>
       </div>
       <div className="absolute top-[169px] left-[362.21px] w-[352.39px] h-[69px]">
         <div className="absolute top-[0px] left-[68.71px] flex items-center justify-center w-[283.68px] h-[69px]">
