@@ -8,13 +8,13 @@
   
   .div-wrapper .group-wrapper {
     background-color: #ffffff;
-    height: 1052px;
+    height: 117px;
     overflow: hidden;
     width: 1440px;
   }
   
   .div-wrapper .group {
-    height: 2628px;
+    height: 117px;
     left: -4732px;
     position: relative;
     top: -1576px;
@@ -37,7 +37,7 @@
   }
   
   .div-wrapper .overlap {
-    height: 1052px;
+    height: 117px;
     left: 4732px;
     position: absolute;
     top: 1576px;
@@ -301,7 +301,7 @@
   }
   
   .div-wrapper .view-5 {
-    height: 117px;
+    height: 200px;
     left: 0;
     position: absolute;
     top: 0;
