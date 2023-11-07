@@ -4,7 +4,7 @@ import "./style.css";
 import Layout from './LayoutGrid';
 import Searchbar from './Searchbar';
 import Skilldropdown from './Skilldropdown';
-import Checkbox from "./Checkbox";
+import Pagination from "./Pagination";
 
 const Main = () => {
     var settings = {
@@ -59,7 +59,9 @@ const Main = () => {
                                         <div className="grid grid-rows-1 grid-flow-col">
                                             <Skilldropdown className="inline-block"></Skilldropdown>
                                             <Searchbar className="inline-block"></Searchbar>
-                                            {/* <Checkbox className="inline-block"></Checkbox> */}
+                                        </div>
+                                        <div>
+                                            <Pagination />
                                         </div>
                                     </section>
                                 </Layout>
