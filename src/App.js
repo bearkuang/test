@@ -6,6 +6,7 @@ import FindIdForm from "./components/Client/FindIdForm";
 import Header from './components/Fix/Header';
 import Mypage_Myprofile from './components/Mypage/Mypage_Myprofile';
 
+
 function App() {
   return (
     <Router>
