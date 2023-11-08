@@ -1,34 +1,32 @@
-import "/work_react/Recode2/src/components/Client/ChangePasswordForm.css";
 
 const ChangePasswordForm = () => {
   return (
-    <div className="div">
-      <div className="div1">
-        <img className="child" alt="" src="/Rectangle48.png" />
-        <div className="item" />
-        <div className="parent">
-          <div className="div2">새 비밀번호</div>
-          <div className="frame-child" />
-          <div className="div3">**********</div>
-          <div className="div4">비밀번호 확인</div>
-          <div className="frame-item" />
-          <div className="div5">**********</div>
-          <div className="frame-inner" />
-          <div className="div6">비밀번호 표시</div>
-        </div>
-        <div className="div7">
-          안전한 비밀번호로 계정을 보호하세요. 다른 곳에서 사용하지 않는
-          비밀번호 설정을 권한합니다.
-        </div>
-        <img className="inner" alt="" src="/Rectangle52.png" />
-        <div className="div8">비밀번호 변경</div>
+<section class="bg-gray-50 dark:bg-gray-900">
+  <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+   
+      <div class="w-full p-6 bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md dark:bg-gray-800 dark:border-gray-700 sm:p-8">
+          <h2 class="mb-1 text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+              Change Password
+          </h2>
+          <form class="mt-4 space-y-4 lg:mt-5 md:space-y-5" action="#">
+        
+              <div>
+                  <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">New Password</label>
+                  <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required=""></input>
+              </div>
+              <div>
+                  <label for="confirm-password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Confirm Password</label>
+                  <input type="password" name="confirm-password" id="confirm-password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required=""></input>
+              </div>
+              <div class="flex items-start">
+           
+              </div>
+              <button type="submit" class="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Reset password</button>
+          </form>
       </div>
-      <div className="group">
-        <div className="div9">비밀번호 변경</div>
-        <img className="right-arrow-1-icon" alt="" src="/right-arrow1.png" />
-      </div>
-      <div className="line-div" />
-    </div>
+  </div>
+</section>
+
   );
 };
 
