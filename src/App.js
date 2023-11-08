@@ -8,8 +8,7 @@ import Header from './components/Fix/Header';
 import Mypage_Myprofile from './components/Mypage/Mypage_Myprofile';
 import ChangePasswordForm from './components/Client/ChangePasswordForm';
 import TermsofService from './components/Client/TermsOfService';
-
-
+import StudyRoom_Detail from './components/StudyRoom/StudyRoom_Detail';
 
 function App() {
   return (
@@ -24,6 +23,7 @@ function App() {
           <Route path="/changePassword" element={<ChangePasswordForm/>} />
           <Route path="/termsofService" element={<TermsofService/>} />
           <Route path="/" element={<Main />} />
+          <Route path="/studyroom" element={<StudyRoom_Detail/>} />
         </Routes>
       </div>
     </Router>
