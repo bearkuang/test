@@ -3,8 +3,12 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import MypageMain from "./components/Mypage/MypageMain";
 import Main from "./components/Main";
 import FindIdForm from "./components/Client/FindIdForm";
+import FindPasswordForm from "./components/Client/FindPasswordForm";
 import Header from './components/Fix/Header';
 import Mypage_Myprofile from './components/Mypage/Mypage_Myprofile';
+import ChangePasswordForm from './components/Client/ChangePasswordForm';
+import TermsofService from './components/Client/TermsOfService';
+
 
 
 function App() {
@@ -16,6 +20,9 @@ function App() {
           <Route path="/mypage" element={<MypageMain />} />
           <Route path="/mypage/myprofile" element={<Mypage_Myprofile />} />
           <Route path="/findId" element={<FindIdForm />} />
+          <Route path="/findPassword" element={<FindPasswordForm />} />
+          <Route path="/changePassword" element={<ChangePasswordForm/>} />
+          <Route path="/termsofService" element={<TermsofService/>} />
           <Route path="/" element={<Main />} />
         </Routes>
       </div>
