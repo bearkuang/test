@@ -7,6 +7,7 @@ import FindPasswordForm from "./components/Client/FindPasswordForm";
 import Header from './components/Fix/Header';
 import Mypage_Myprofile from './components/Mypage/Mypage_Myprofile';
 import ChangePasswordForm from './components/Client/ChangePasswordForm';
+import TermsofService from './components/Client/TermsOfService';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/findId" element={<FindIdForm />} />
           <Route path="/findPassword" element={<FindPasswordForm />} />
           <Route path="/changePassword" element={<ChangePasswordForm/>} />
+          <Route path="/termsofService" element={<TermsofService/>} />
           <Route path="/" element={<Main />} />
         </Routes>
       </div>
