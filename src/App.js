@@ -14,6 +14,9 @@ import StudyRecruitment from "./components/Study/StudyRecruitment";
 import MultiSelect from "./components/Study/MultiSelect";
 import ModifyProfile from "./components/Mypage/ModifyProfile";
 import Essay from "./components/Mypage/Essay";
+import Withdraw from "./components/Mypage/Withdraw";
+import Identifing from "./components/Mypage/Identifing";
+import ChangePassword from "./components/Mypage/ChangePassword";
 
 function App() {
   return (
@@ -30,6 +33,9 @@ function App() {
           <Route path="/mypage/myprofile" element={<Mypage_Myprofile />} />
           <Route path="/mypage/myprofile/essay" element={<Essay />} />
           <Route path="/mypage/myprofile/modifyProfile" element={<ModifyProfile />} />
+          <Route path="/mypage/myprofile/identifing" element={<Identifing />} />
+          <Route path="/mypage/myprofile/changePassword" element={<ChangePassword />} />
+          <Route path="/mypage/myprofile/Withdraw" element={<Withdraw />} />
           <Route path="/findId" element={<FindIdForm />} />
           <Route path="/findPassword" element={<FindPasswordForm />} />
           <Route path="/changePassword" element={<ChangePasswordForm/>} />
