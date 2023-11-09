@@ -9,6 +9,7 @@ import Mypage_Myprofile from './components/Mypage/Mypage_Myprofile';
 import ChangePasswordForm from './components/Client/ChangePasswordForm';
 import TermsofService from './components/Client/TermsOfService';
 import StudyRoom_Detail from './components/StudyRoom/StudyRoom_Detail';
+import StudyRoom_Post from './components/StudyRoom/StudyRoom_Post';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/termsofService" element={<TermsofService/>} />
           <Route path="/" element={<Main />} />
           <Route path="/studyroom" element={<StudyRoom_Detail/>} />
+          <Route path="/studyroom/post" element={<StudyRoom_Post/>} />
         </Routes>
       </div>
     </Router>
