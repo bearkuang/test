@@ -17,6 +17,7 @@ import Essay from "./components/Mypage/Essay";
 import Withdraw from "./components/Mypage/Withdraw";
 import Identifing from "./components/Mypage/Identifing";
 import ChangePassword from "./components/Mypage/ChangePassword";
+import StudyRoom_Detail from './components/StudyRoom/StudyRoom_Detail';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
           <Route path="/changePassword" element={<ChangePasswordForm/>} />
           <Route path="/termsofService" element={<TermsofService/>} />
           <Route path="/" element={<Main />} />
+          <Route path="/studyroom" element={<StudyRoom_Detail/>} />
         </Routes>
       </div>
     </Router>
