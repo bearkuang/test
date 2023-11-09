@@ -2,64 +2,69 @@ import './FindIdForm.css';
 
 const FindIdForm = () => {
   return (
-    <div className="relative bg-white w-full h-[1052px] overflow-hidden text-center text-29xl text-black font-itim">
-  
-      <div className="absolute top-[302px] left-[362px] w-[730px] h-[360px] overflow-hidden text-mini text-gray">
-        <img
-          className="absolute top-[0px] left-[0px] rounded-3xs w-[730px] h-[360px]"
-          alt=""
-          src="C:\work_react\Recode2\src\components\Image\Rectangle 52.png"
-        />
-        <div className="absolute top-[281.5px] left-[15.5px] box-border w-[699px] h-px border-t-[1px] border-solid border-black" />
-        <div className="absolute top-[43px] left-[16px] w-[698px] h-[197px] overflow-hidden">
-          <div className="absolute top-[103px] left-[7px] flex items-center justify-center w-[43px] h-[19px]">
-            이메일
-          </div>
-          <div className="absolute top-[139px] left-[0px] rounded-3xs bg-white box-border w-[698px] h-[50px] border-[1px] border-solid border-black" />
-          <input
-          type="email"
-          className="absolute top-[139px] left-[0px] rounded-3xs bg-white box-border w-[698px] h-[50px] border-[1px] border-solid border-black"
-          placeholder="이메일 주소를 입력하세요"
-        />
-          <div className="absolute top-[4px] left-[7px] flex items-center justify-center w-[43px] h-[19px]">
-            닉네임
-          </div>
-          <input
+<div className="relative bg-white w-full h-[1052px] overflow-hidden text-black font-itim">
+  <div className="flex flex-col items-center justify-center h-full">
+    {/* Header with back button and title */}
+    <div className="flex items-center space-x-3 mb-6">
+      <img
+        className="w-[36px] h-[45px] object-cover"
+        alt="뒤로가기"
+        src="./right-arrow1.png"
+      />
+      <h1 className="text-[29xl] text-center">아이디 찾기</h1>
+    </div>
+
+    {/* Form container */}
+    <div className="w-[730px] bg-white p-6 shadow rounded-lg">
+      <p className="text-sm text-gray-700 mb-4">
+        회원 가입 시 입력한 이메일을 입력하세요
+      </p>
+
+      {/* Nickname input */}
+      <div className="mb-4">
+        <label htmlFor="nickname" className="block text-gray-700 mb-2">
+          닉네임
+        </label>
+        <input
           type="text"
-          className="absolute top-[40px] left-[0px] rounded-3xs bg-white box-border w-[698px] h-[50px] border-[1px] border-solid border-black"
+          id="nickname"
+          className="w-full h-[50px] border border-black px-3 rounded"
           placeholder="닉네임을 입력하세요"
         />
-        </div>
-        <div className="absolute top-[19px] left-[14px] flex items-center justify-center w-[300px] h-3.5">
-          회원 가입 시 등록했던 이메일을 입력해주세요.
-        </div>
-        <div className="absolute top-[308px] left-[482px] text-xl text-cornflowerblue flex items-center justify-center w-[75px] h-[27px]">
-          취소
-        </div>
-        <img
-          className="absolute top-[308px] left-[580px] rounded-[30px] w-[77px] h-[27px]"
-          alt=""
-          src="/rectangle-52.svg"
+      </div>
+
+      {/* Email input */}
+      <div className="mb-4">
+        <label htmlFor="email" className="block text-gray-700 mb-2">
+          이메일
+        </label>
+        <input
+          type="email"
+          id="email"
+          className="w-full h-[50px] border border-black px-3 rounded"
+          placeholder="이메일 주소를 입력하세요"
         />
+      </div>
+
+      {/* Buttons */}
+      <div className="flex justify-end space-x-3">
         <button
-  type="button" // Change to "submit" if this button is meant to submit a form
-  className="absolute top-[308px] left-[580px] rounded-[30px] w-[77px] h-[27px] bg-cornflowerblue text-xl text-black flex items-center justify-center"
->
-  다음
-</button>
+          type="button"
+          className="w-[75px] h-[27px] text-xl text-blue-600 border border-blue-600 rounded-full"
+        >
+          취소
+        </button>
+        <button
+          type="submit"
+          className="w-[77px] h-[27px] bg-blue-600 text-xl text-black rounded-full"
+        >
+          다음
+        </button>
       </div>
-      <div className="absolute top-[169px] left-[362.21px] w-[352.39px] h-[69px]">
-        <div className="absolute top-[0px] left-[68.71px] flex items-center justify-center w-[283.68px] h-[69px]">
-          아이디 찾기
-        </div>
-        <img
-          className="absolute top-[12px] left-[0px] w-[36.32px] h-[45px] object-cover"
-          alt=""
-          src="/rightarrow-1@2x.png"
-        />
-      </div>
-      <div className="absolute top-[246.5px] left-[22.5px] box-border w-[1396px] h-px border-t-[1px] border-solid border-black" />
     </div>
+  </div>
+</div>
+
   );
 };
 

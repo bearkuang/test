@@ -8,16 +8,18 @@ import ChangePasswordForm from './components/Client/ChangePasswordForm';
 import TermsofService from './components/Client/TermsOfService';
 import Header from "./components/Fix/Header";
 import Mypage_Myprofile from "./components/Mypage/Mypage_Myprofile";
+import FindEmailForm from "./components/Client/FindEmailForm";
 import Login from "./components/Client/Login";
 import Join from "./components/Client/Join";
 import StudyRecruitment from "./components/Study/StudyRecruitment";
 import MultiSelect from "./components/Study/MultiSelect";
-import ModifyProfile from "./components/Mypage/ModifyProfile";
 import Essay from "./components/Mypage/Essay";
 import Withdraw from "./components/Mypage/Withdraw";
 import Identifing from "./components/Mypage/Identifing";
 import ChangePassword from "./components/Mypage/ChangePassword";
 import StudyRoom_Detail from './components/StudyRoom/StudyRoom_Detail';
+
+
 
 function App() {
   return (
@@ -29,7 +31,7 @@ function App() {
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/join" element={<Join />} />
-          <Route path="/recruitment" element={<StudyRecruitment />} />
+          <Route path="/client/recruitment" element={<StudyRecruitment />} />
           <Route path="/mypage" element={<MypageMain />} />
           <Route path="/mypage/myprofile" element={<Mypage_Myprofile />} />
           <Route path="/mypage/myprofile/essay" element={<Essay />} />
@@ -41,6 +43,12 @@ function App() {
           <Route path="/findPassword" element={<FindPasswordForm />} />
           <Route path="/changePassword" element={<ChangePasswordForm/>} />
           <Route path="/termsofService" element={<TermsofService/>} />
+          <Route path="/mypage/multiselect" element={<MultiSelect />} />
+          <Route path="/client/findId" element={<FindIdForm />} />
+          <Route path="/client/findPassword" element={<FindPasswordForm />} />
+          <Route path="/client/changePassword" element={<ChangePasswordForm/>} />
+          <Route path="/client/termsofService" element={<TermsofService/>} />
+          <Route path="/client/findEmail" element={<FindEmailForm/>} />
           <Route path="/" element={<Main />} />
           <Route path="/studyroom" element={<StudyRoom_Detail/>} />
         </Routes>
