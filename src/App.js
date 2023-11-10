@@ -19,7 +19,7 @@ import Identifing from "./components/Mypage/Identifing";
 import ChangePassword from "./components/Mypage/ChangePassword";
 import StudyRoom_Detail from './components/StudyRoom/StudyRoom_Detail';
 import ModifyProfile from './components/Mypage/ModifyProfile';
-import HelpDesk from "./components/Mypage/HelpDesk";
+import HelpDesk from "./components/Mypage/StudyList";
 
 
 

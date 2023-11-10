@@ -4,6 +4,9 @@ import "./Main.css";
 import Layout from "./LayoutGrid";
 import Search from "./Fix/Search";
 import MultiSelect from "./Study/MultiSelect";
+import StudyList from "./Mypage/StudyList";
+import Dropdowns from "./Fix/Dropdowns"
+
 
 const Main = () => {
   var settings = {
@@ -77,9 +80,12 @@ const Main = () => {
             </div>
             <div className="col-start-2 col-span-4 ml-6">
               <MultiSelect />
+             
             </div>
+        <Dropdowns />
           </div>
         </div>
+            <StudyList/>
       </Layout>
     </>
   );
