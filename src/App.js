@@ -11,6 +11,7 @@ import TermsofService from './components/Client/TermsOfService';
 import StudyRoom_Detail from './components/StudyRoom/StudyRoom_Detail';
 import StudyRoom_Post from './components/StudyRoom/StudyRoom_Post';
 import StudyRoom_Attendance from './components/StudyRoom/StudyRoom_Attendance';
+import StudyRoom_List from './components/StudyRoom/StudyRoom_List';
 
 function App() {
   return (
@@ -22,12 +23,13 @@ function App() {
           <Route path="/mypage/myprofile" element={<Mypage_Myprofile />} />
           <Route path="/findId" element={<FindIdForm />} />
           <Route path="/findPassword" element={<FindPasswordForm />} />
-          <Route path="/changePassword" element={<ChangePasswordForm/>} />
-          <Route path="/termsofService" element={<TermsofService/>} />
+          <Route path="/changePassword" element={<ChangePasswordForm />} />
+          <Route path="/termsofService" element={<TermsofService />} />
           <Route path="/" element={<Main />} />
-          <Route path="/studyroom" element={<StudyRoom_Detail/>} />
-          <Route path="/studyroom/post" element={<StudyRoom_Post/>} />
-          <Route path="/studyroom/attendance" element={<StudyRoom_Attendance/>} />
+          <Route path="/studyroom" element={<StudyRoom_Detail />} />
+          <Route path="/studyroom/post" element={<StudyRoom_Post />} />
+          <Route path="/studyroom/attendance" element={<StudyRoom_Attendance />} />
+          <Route path="/studyroom/list" element={<StudyRoom_List />} />
         </Routes>
       </div>
     </Router>

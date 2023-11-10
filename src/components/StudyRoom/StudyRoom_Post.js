@@ -7,7 +7,7 @@ const StudyRoom_Post = () => {
             <StudyRoom_Sidebar />
             <div className="max-w-screen-md mx-auto p-4">
                 <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md flex flex-col">
-                    <label className="block text-lg font-semibold mb-2">게시글 작성</label>
+                    <label className="block text-xl font-semibold mb-8">게시글 작성</label>
 
 
                     {/* 카테고리 선택 */}
@@ -56,11 +56,11 @@ const StudyRoom_Post = () => {
                         ></textarea>
                     </div>
 
-                    {/* 게시 버튼 */}
+                    {/* 작성완료 버튼 */}
                     <button
-                        className="mt-0.5 px-6 py-2 w-auto ml-auto bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+                        className="mt-0.5 px-2.5 py-2 w-auto ml-auto bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
                     >
-                        게시
+                        작성 완료
                     </button>
                 </div>
             </div>
