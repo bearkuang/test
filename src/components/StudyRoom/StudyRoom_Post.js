@@ -5,8 +5,8 @@ const StudyRoom_Post = () => {
     return (
         <div>
             <StudyRoom_Sidebar />
-            <div className="max-w-screen-lg mx-auto p-4">
-                <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+            <div className="max-w-screen-md mx-auto p-4">
+                <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md flex flex-col">
                     <label className="block text-lg font-semibold mb-2">게시글 작성</label>
 
 
@@ -17,11 +17,12 @@ const StudyRoom_Post = () => {
                         </label>
                         <select
                             id="category"
-                            className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600"
+                            className="w-13 px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600"
                         >
+                            <option value="technology"></option>
                             <option value="technology">Java</option>
-                            <option value="travel">SpringBoot</option>
-                            <option value="food">음식</option>
+                            <option value="technology">SpringBoot</option>
+                            <option value="technology">Python</option>
                             {/* 다른 카테고리 옵션들 추가 */}
                         </select>
                     </div>
@@ -57,7 +58,7 @@ const StudyRoom_Post = () => {
 
                     {/* 게시 버튼 */}
                     <button
-                        className="mt-4 px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+                        className="mt-0.5 px-6 py-2 w-auto ml-auto bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
                     >
                         게시
                     </button>

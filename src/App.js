@@ -10,6 +10,7 @@ import ChangePasswordForm from './components/Client/ChangePasswordForm';
 import TermsofService from './components/Client/TermsOfService';
 import StudyRoom_Detail from './components/StudyRoom/StudyRoom_Detail';
 import StudyRoom_Post from './components/StudyRoom/StudyRoom_Post';
+import StudyRoom_Attendance from './components/StudyRoom/StudyRoom_Attendance';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/studyroom" element={<StudyRoom_Detail/>} />
           <Route path="/studyroom/post" element={<StudyRoom_Post/>} />
+          <Route path="/studyroom/attendance" element={<StudyRoom_Attendance/>} />
         </Routes>
       </div>
     </Router>
