@@ -24,6 +24,8 @@ import Qna from "./components/Qna/Qna";
 import HelpDesk from "./components/Mypage/StudyList";
 import StudyRoom_Post from './components/StudyRoom/StudyRoom_Post';
 import StudyRoom_Attendance from './components/StudyRoom/StudyRoom_Attendance';
+import QnaDetail from "./components/Qna/QnaDetail";
+import QnaPost from "./components/Qna/QnaPost";
 
 function App() {
   return (
@@ -55,6 +57,8 @@ function App() {
           <Route path="/studyroom" element={<StudyRoom_Detail/>} />
           <Route path="/studyroom/board" element={<Board/>} />
           <Route path="/qna" element={<Qna/>} />
+          <Route path="/qna/detail" element={<QnaDetail/>} />
+          <Route path="/qna/post" element={<QnaPost/>} />
           <Route path="/mypage/helpDesk" element={<HelpDesk />} />
           <Route path="/studyroom/post" element={<StudyRoom_Post />} />
           <Route path="/studyroom/attendance" element={<StudyRoom_Attendance />} />
