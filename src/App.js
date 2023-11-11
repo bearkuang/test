@@ -22,7 +22,6 @@ import ModifyProfile from './components/Mypage/ModifyProfile';
 import HelpDesk from "./components/Mypage/StudyList";
 
 
-
 function App() {
   return (
     <Router>

@@ -80,12 +80,12 @@ const Main = () => {
             </div>
             <div className="col-start-2 col-span-4 ml-6">
               <MultiSelect />
-             
             </div>
         <Dropdowns />
           </div>
         </div>
             <StudyList/>
+
       </Layout>
     </>
   );
