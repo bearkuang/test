@@ -21,6 +21,7 @@ import Mypage_Myprofile from "./components/Mypage/Mypage_Myprofile";
 import StudyRoom_Detail from './components/StudyRoom/StudyRoom_Detail';
 import Board from "./components/StudyRoom/StudyRoom_Board";
 import Qna from "./components/Qna/Qna";
+import HelpDesk from "./components/Mypage/StudyList";
 
 
 function App() {
@@ -54,6 +55,7 @@ function App() {
           <Route path="/studyroom" element={<StudyRoom_Detail/>} />
           <Route path="/studyroom/board" element={<Board/>} />
           <Route path="/qna" element={<Qna/>} />
+          <Route path="/mypage/helpDesk" element={<HelpDesk />} />
         </Routes>
       </div>
     </Router>
