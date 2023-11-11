@@ -1,24 +1,26 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import MypageMain from "./components/Mypage/MypageMain";
 import Main from "./components/Main";
 import FindIdForm from "./components/Client/FindIdForm";
 import FindPasswordForm from "./components/Client/FindPasswordForm";
 import ChangePasswordForm from './components/Client/ChangePasswordForm';
 import TermsofService from './components/Client/TermsOfService';
 import Header from "./components/Fix/Header";
-import Mypage_Myprofile from "./components/Mypage/Mypage_Myprofile";
-import FindEmailForm from "./components/Client/FindEmailForm";
 import Login from "./components/Client/Login";
 import Join from "./components/Client/Join";
 import StudyRecruitment from "./components/Study/StudyRecruitment";
 import MultiSelect from "./components/Study/MultiSelect";
+import FindEmailForm from "./components/Client/FindEmailForm";
+import MypageMain from "./components/Mypage/MypageMain";
 import Essay from "./components/Mypage/Essay";
 import Withdraw from "./components/Mypage/Withdraw";
 import Identifing from "./components/Mypage/Identifing";
+import ModifyProfile from "./components/Mypage/ModifyProfile";
 import ChangePassword from "./components/Mypage/ChangePassword";
+import Mypage_Myprofile from "./components/Mypage/Mypage_Myprofile";
 import StudyRoom_Detail from './components/StudyRoom/StudyRoom_Detail';
-import ModifyProfile from './components/Mypage/ModifyProfile';
+import Board from "./components/StudyRoom/StudyRoom_Board";
+import Qna from "./components/Qna/Qna";
 import HelpDesk from "./components/Mypage/StudyList";
 
 
@@ -43,7 +45,6 @@ function App() {
           <Route path="/findId" element={<FindIdForm />} />
           <Route path="/findPassword" element={<FindPasswordForm />} />
           <Route path="/changePassword" element={<ChangePasswordForm/>} />
-          <Route path="/termsofService" element={<TermsofService/>} />
           <Route path="/mypage/multiselect" element={<MultiSelect />} />
           <Route path="/client/findId" element={<FindIdForm />} />
           <Route path="/client/findPassword" element={<FindPasswordForm />} />
@@ -52,6 +53,8 @@ function App() {
           <Route path="/client/findEmail" element={<FindEmailForm/>} />
           <Route path="/" element={<Main />} />
           <Route path="/studyroom" element={<StudyRoom_Detail/>} />
+          <Route path="/studyroom/board" element={<Board/>} />
+          <Route path="/qna" element={<Qna/>} />
           <Route path="/mypage/helpDesk" element={<HelpDesk />} />
         </Routes>
       </div>
