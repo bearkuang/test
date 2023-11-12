@@ -27,6 +27,7 @@ import StudyRoom_Attendance from './components/StudyRoom/StudyRoom_Attendance';
 import QnaDetail from "./components/Qna/QnaDetail";
 import QnaPost from "./components/Qna/QnaPost";
 import User_list from "./components/Admin/User_list";
+import Leader_Permission from "./components/Admin/Leader_Permission";
 
 function App() {
   return (
@@ -64,6 +65,7 @@ function App() {
           <Route path="/studyroom/post" element={<StudyRoom_Post />} />
           <Route path="/studyroom/attendance" element={<StudyRoom_Attendance />} />
           <Route path="/admin/userList" element={<User_list />} />
+          <Route path="/admin/leaderPermission" element={<Leader_Permission />} />
         </Routes>
       </div>
     </Router>
