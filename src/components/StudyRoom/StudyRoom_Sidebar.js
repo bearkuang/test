@@ -4,6 +4,7 @@ import React, { useState } from "react";
 function StudyRoom_Sidebar() {
 
   const [isAdmin, setIsAdmin] = useState(true);
+  const userRole = 'admin';
 
   return (
     <div>

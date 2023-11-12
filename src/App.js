@@ -26,6 +26,7 @@ import StudyRoom_Post from './components/StudyRoom/StudyRoom_Post';
 import StudyRoom_Attendance from './components/StudyRoom/StudyRoom_Attendance';
 import QnaDetail from "./components/Qna/QnaDetail";
 import QnaPost from "./components/Qna/QnaPost";
+import StudyManagement from "./components/Admin/StudyManagement";
 
 function App() {
   return (
@@ -62,6 +63,7 @@ function App() {
           <Route path="/mypage/helpDesk" element={<HelpDesk />} />
           <Route path="/studyroom/post" element={<StudyRoom_Post />} />
           <Route path="/studyroom/attendance" element={<StudyRoom_Attendance />} />
+          <Route path="/admin/studymanagement" element={<StudyManagement />} />
         </Routes>
       </div>
     </Router>
