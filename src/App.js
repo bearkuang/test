@@ -26,6 +26,10 @@ import StudyRoom_Post from './components/StudyRoom/StudyRoom_Post';
 import StudyRoom_Attendance from './components/StudyRoom/StudyRoom_Attendance';
 import QnaDetail from "./components/Qna/QnaDetail";
 import QnaPost from "./components/Qna/QnaPost";
+import StudyRoom_Manage from "./components/StudyRoom/StudyRoom_Manage";
+import ApplicationStatus from "./components/StudyRoom/StudyRoom_ApplicationStatus";
+import ApplicationDetail from "./components/StudyRoom/StudyRoom_ApplicationDetail";
+
 
 function App() {
   return (
@@ -35,9 +39,12 @@ function App() {
         {" "}
         {/* 이 div가 헤더와 나머지 컨텐츠 사이의 간격을 조정합니다 */}
         <Routes>
+          <Route path="/" element={<Main />} />
           <Route path="/login" element={<Login />} />
           <Route path="/join" element={<Join />} />
-          <Route path="/client/recruitment" element={<StudyRecruitment />} />
+          <Route path="/findId" element={<FindIdForm />} />
+          <Route path="/findPassword" element={<FindPasswordForm />} />
+          <Route path="/changePassword" element={<ChangePasswordForm />} />
           <Route path="/mypage" element={<MypageMain />} />
           <Route path="/mypage/myprofile" element={<Mypage_Myprofile />} />
           <Route path="/mypage/myprofile/essay" element={<Essay />} />
@@ -45,23 +52,23 @@ function App() {
           <Route path="/mypage/myprofile/identifing" element={<Identifing />} />
           <Route path="/mypage/myprofile/changePassword" element={<ChangePassword />} />
           <Route path="/mypage/myprofile/Withdraw" element={<Withdraw />} />
-          <Route path="/findId" element={<FindIdForm />} />
-          <Route path="/findPassword" element={<FindPasswordForm />} />
-          <Route path="/changePassword" element={<ChangePasswordForm/>} />
+          <Route path="/mypage/helpDesk" element={<HelpDesk />} />
           <Route path="/mypage/multiselect" element={<MultiSelect />} />
+          <Route path="/client/recruitment" element={<StudyRecruitment />} />
           <Route path="/client/findId" element={<FindIdForm />} />
           <Route path="/client/findPassword" element={<FindPasswordForm />} />
-          <Route path="/client/termsofService" element={<TermsofService/>} />
-          <Route path="/client/findEmail" element={<FindEmailForm/>} />
-          <Route path="/" element={<Main />} />
-          <Route path="/studyroom" element={<StudyRoom_Detail/>} />
-          <Route path="/studyroom/board" element={<Board/>} />
-          <Route path="/qna" element={<Qna/>} />
-          <Route path="/qna/detail" element={<QnaDetail/>} />
-          <Route path="/qna/post" element={<QnaPost/>} />
-          <Route path="/mypage/helpDesk" element={<HelpDesk />} />
+          <Route path="/client/termsofService" element={<TermsofService />} />
+          <Route path="/client/findEmail" element={<FindEmailForm />} />
+          <Route path="/qna" element={<Qna />} />
+          <Route path="/qna/detail" element={<QnaDetail />} />
+          <Route path="/qna/post" element={<QnaPost />} />
+          <Route path="/studyroom" element={<StudyRoom_Detail />} />
+          <Route path="/studyroom/board" element={<Board />} />
           <Route path="/studyroom/post" element={<StudyRoom_Post />} />
           <Route path="/studyroom/attendance" element={<StudyRoom_Attendance />} />
+          <Route path="/studyroom/manage" element={<StudyRoom_Manage />} />
+          <Route path="/studyroom/application" exact element={<ApplicationStatus />} />
+          <Route path="/studyroom/applicationdetail/:id" element={<ApplicationDetail />} />
         </Routes>
       </div>
     </Router>
