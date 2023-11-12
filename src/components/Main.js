@@ -6,6 +6,7 @@ import Search from "./Fix/Search";
 import MultiSelect from "./Study/MultiSelect";
 import StudyList from "./Mypage/StudyList";
 import Dropdowns from "./Fix/Dropdowns"
+import Pagination from "./Fix/Pagination";
 
 
 const Main = () => {
@@ -24,9 +25,7 @@ const Main = () => {
         <section>
           <div
             id="slider-container"
-            class="w-1800px mx-auto 
-      mt-12"
-          >
+            class="w-1800px mx-auto mt-12">
             <Slider {...settings}>
               <article
                 style={{ display: "grid !important" }}
@@ -85,7 +84,7 @@ const Main = () => {
           </div>
         </div>
             <StudyList/>
-
+            <Pagination />
       </Layout>
     </>
   );
