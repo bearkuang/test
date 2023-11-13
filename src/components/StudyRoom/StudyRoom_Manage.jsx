@@ -2,7 +2,7 @@ import React from 'react';
 import StudyRoom_Sidebar from "./StudyRoom_Sidebar";
 
 
-const StudyRoom_Manage = () => {
+const Manage = () => {
 
     const date = {
         CreateDate: '2023-11-13',
@@ -46,4 +46,4 @@ const StudyRoom_Manage = () => {
     );
 }
 
-export default StudyRoom_Manage;
+export default Manage;

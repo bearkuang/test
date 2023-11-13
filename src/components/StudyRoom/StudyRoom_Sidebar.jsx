@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 
-function StudyRoom_Sidebar() {
+function Sidebar() {
 
   const [isAdmin, setIsAdmin] = useState(true);
 
@@ -86,4 +86,4 @@ function StudyRoom_Sidebar() {
   );
 }
 
-export default StudyRoom_Sidebar;
+export default Sidebar;

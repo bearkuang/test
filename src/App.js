@@ -18,15 +18,15 @@ import Identifing from "./components/Mypage/Identifing";
 import ModifyProfile from "./components/Mypage/ModifyProfile";
 import ChangePassword from "./components/Mypage/ChangePassword";
 import Mypage_Myprofile from "./components/Mypage/Mypage_Myprofile";
-import StudyRoom_Detail from './components/StudyRoom/StudyRoom_Detail';
+import Detail from './components/StudyRoom/StudyRoom_Detail';
 import Board from "./components/StudyRoom/StudyRoom_Board";
 import Qna from "./components/Qna/Qna";
 import HelpDesk from "./components/Mypage/StudyList";
-import StudyRoom_Post from './components/StudyRoom/StudyRoom_Post';
-import StudyRoom_Attendance from './components/StudyRoom/StudyRoom_Attendance';
+import Post from './components/StudyRoom/StudyRoom_Post';
+import Attendance from './components/StudyRoom/StudyRoom_Attendance';
 import QnaDetail from "./components/Qna/QnaDetail";
 import QnaPost from "./components/Qna/QnaPost";
-import StudyRoom_Manage from "./components/StudyRoom/StudyRoom_Manage";
+import Manage from "./components/StudyRoom/StudyRoom_Manage";
 import ApplicationStatus from "./components/StudyRoom/StudyRoom_ManageApplicationStatus";
 import ApplicationDetail from "./components/StudyRoom/StudyRoom_ManageApplicationDetail";
 import Quiz from "./components/StudyRoom/StudyRoom_Quiz";
@@ -64,11 +64,11 @@ function App() {
           <Route path="/qna" element={<Qna />} />
           <Route path="/qna/detail" element={<QnaDetail />} />
           <Route path="/qna/post" element={<QnaPost />} />
-          <Route path="/studyroom" element={<StudyRoom_Detail />} />
+          <Route path="/studyroom" element={<Detail />} />
           <Route path="/studyroom/board" element={<Board />} />
-          <Route path="/studyroom/post" element={<StudyRoom_Post />} />
-          <Route path="/studyroom/attendance" element={<StudyRoom_Attendance />} />
-          <Route path="/studyroom/manage" element={<StudyRoom_Manage />} />
+          <Route path="/studyroom/post" element={<Post />} />
+          <Route path="/studyroom/attendance" element={<Attendance />} />
+          <Route path="/studyroom/manage" element={<Manage />} />
           <Route path="/studyroom/application" exact element={<ApplicationStatus />} />
           <Route path="/studyroom/applicationdetail/:id" element={<ApplicationDetail />} />
           <Route path="/studyroom/quiz" element={<Quiz />} />

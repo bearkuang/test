@@ -1,7 +1,7 @@
 import React from "react";
 import StudyRoom_Sidebar from "./StudyRoom_Sidebar";
 
-const StudyRoom_Detail = () => {
+const Detail = () => {
 
 
     // test
@@ -33,4 +33,4 @@ const StudyRoom_Detail = () => {
 };
 
 
-export default StudyRoom_Detail;
+export default Detail;
