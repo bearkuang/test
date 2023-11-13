@@ -34,6 +34,7 @@ import Participants from "./components/StudyRoom/Participants";
 import StudyRoom_Manage from "./components/StudyRoom/StudyRoom_Manage";
 import ApplicationStatus from "./components/StudyRoom/StudyRoom_ApplicationStatus";
 import ApplicationDetail from "./components/StudyRoom/StudyRoom_ApplicationDetail";
+import StudyModify from "./components/StudyRoom/StudyModify";
 
 
 function App() {
@@ -79,6 +80,7 @@ function App() {
             <Route path="/studyroom/application" exact element={<ApplicationStatus />} />
             <Route path="/studyroom/applicationdetail/:id" element={<ApplicationDetail />} />
             <Route path="/studyroom/manage" element={<StudyRoom_Manage />} />
+            <Route path="/studyroom/manage/modify" element={<StudyModify />} />
           </Routes>
         </div>
       </AuthProvider>

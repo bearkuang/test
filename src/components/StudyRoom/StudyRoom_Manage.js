@@ -10,7 +10,6 @@ const StudyRoom_Manage = () => {
     };
 
     const navigate = useNavigate();
-    // /studyroom/applicationdetail/:id
 
     return (
         <div>
@@ -27,7 +26,7 @@ const StudyRoom_Manage = () => {
                         <div className="flex items-center space-x-60 mb-4">
                             <span className="text-xl mr-4 font-semibold">스터디 모집 글</span>
                             <div className="flex items-end">
-                                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-40">
+                                <button onClick={() => navigate('/studyroom/manage/modify')} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-40">
                                     버튼
                                 </button>
                             </div>
