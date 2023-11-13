@@ -2,7 +2,7 @@ const posts = [
     {
       id: 1,
       title: '카카오톡 클론 코딩 스터디',
-      href: '#',
+      href: '/studyroom',
       description:
         '카카오톡 클론 코딩으로 실력 함께 키우실 분 구합니다. MSA 전문가 적극 환영',
       date: 'Mar 16, 2020',
