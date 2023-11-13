@@ -27,11 +27,13 @@ import StudyRoom_Attendance from './components/StudyRoom/StudyRoom_Attendance';
 import QnaDetail from "./components/Qna/QnaDetail";
 import QnaPost from "./components/Qna/QnaPost";
 import StudyRoom_Manage from "./components/StudyRoom/StudyRoom_Manage";
-import ApplicationStatus from "./components/StudyRoom/StudyRoom_ApplicationStatus";
-import ApplicationDetail from "./components/StudyRoom/StudyRoom_ApplicationDetail";
+import ApplicationStatus from "./components/StudyRoom/StudyRoom_ManageApplicationStatus";
+import ApplicationDetail from "./components/StudyRoom/StudyRoom_ManageApplicationDetail";
+import Quiz from "./components/StudyRoom/StudyRoom_Quiz";
 
 
 function App() {
+
   return (
     <Router>
       <Header /> {/* 모든 페이지 상단에 헤더를 렌더링합니다 */}
@@ -69,6 +71,7 @@ function App() {
           <Route path="/studyroom/manage" element={<StudyRoom_Manage />} />
           <Route path="/studyroom/application" exact element={<ApplicationStatus />} />
           <Route path="/studyroom/applicationdetail/:id" element={<ApplicationDetail />} />
+          <Route path="/studyroom/quiz" element={<Quiz />} />
         </Routes>
       </div>
     </Router>
