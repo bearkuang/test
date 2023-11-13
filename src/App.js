@@ -35,6 +35,7 @@ import StudyRoom_Manage from "./components/StudyRoom/StudyRoom_Manage";
 import ApplicationStatus from "./components/StudyRoom/StudyRoom_ApplicationStatus";
 import ApplicationDetail from "./components/StudyRoom/StudyRoom_ApplicationDetail";
 import StudyModify from "./components/StudyRoom/StudyModify";
+import StudyRoomNotLogin from "./components/StudyRoom/StudyroomDetailNotLogin";
 
 
 function App() {
@@ -66,6 +67,7 @@ function App() {
             <Route path="/client/findEmail" element={<FindEmailForm />} />
             <Route path="/" element={<Main />} />
             <Route path="/studyroom" element={<StudyRoom_Detail />} />
+            <Route path="/studyroomNotLogin" element={<StudyRoomNotLogin />} />
             <Route path="/studyroom/board" element={<Board />} />
             <Route path="/qna" element={<Qna />} />
             <Route path="/qna/detail" element={<QnaDetail />} />
