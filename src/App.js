@@ -30,6 +30,7 @@ import Manage from "./components/StudyRoom/StudyRoom_Manage";
 import ApplicationStatus from "./components/StudyRoom/StudyRoom_ManageApplicationStatus";
 import ApplicationDetail from "./components/StudyRoom/StudyRoom_ManageApplicationDetail";
 import Quiz from "./components/StudyRoom/StudyRoom_Quiz";
+import PostDetail from "./components/StudyRoom/StudyRoom_PostDetail";
 
 
 function App() {
@@ -72,6 +73,8 @@ function App() {
           <Route path="/studyroom/application" exact element={<ApplicationStatus />} />
           <Route path="/studyroom/applicationdetail/:id" element={<ApplicationDetail />} />
           <Route path="/studyroom/quiz" element={<Quiz />} />
+          <Route path="/studyroom/post" exact element={Post} />
+          <Route path="/studyroom/postdetail/:postId" element={<PostDetail />} />
         </Routes>
       </div>
     </Router>
