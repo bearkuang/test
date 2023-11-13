@@ -31,6 +31,10 @@ import User_list from "./components/Admin/User_list";
 import Leader_Permission from "./components/Admin/Leader_Permission";
 import { AuthProvider } from "./context/AuthContext";
 import Participants from "./components/StudyRoom/Participants";
+import StudyRoom_Manage from "./components/StudyRoom/StudyRoom_Manage";
+import ApplicationStatus from "./components/StudyRoom/StudyRoom_ApplicationStatus";
+import ApplicationDetail from "./components/StudyRoom/StudyRoom_ApplicationDetail";
+
 
 function App() {
   return (
@@ -72,6 +76,9 @@ function App() {
             <Route path="/admin/studymanagement" element={<StudyManagement />} />
             <Route path="/admin/userList" element={<User_list />} />
             <Route path="/admin/leaderPermission" element={<Leader_Permission />} />
+            <Route path="/studyroom/application" exact element={<ApplicationStatus />} />
+            <Route path="/studyroom/applicationdetail/:id" element={<ApplicationDetail />} />
+            <Route path="/studyroom/manage" element={<StudyRoom_Manage />} />
           </Routes>
         </div>
       </AuthProvider>
