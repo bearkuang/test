@@ -92,7 +92,6 @@ const Main = () => {
           </div>
         </div>
             <StudyList/>
-            <Pagination />
       </Layout>
     </>
   );
